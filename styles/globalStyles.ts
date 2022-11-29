@@ -5,6 +5,8 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'Press Start 2P', cursive;
   }
   
   body {
@@ -16,6 +18,7 @@ export const GlobalStyle = createGlobalStyle`
       #171819 75%
     );
     background-size: 10px 10px;
+    color: #fff;
 
     overflow: hidden;
 
