@@ -49,9 +49,19 @@ export default class MyDocument extends Document {
           />
           <meta
             name="description"
-            content="Site pessoal de Hugo Defante, feito com Next.js, TypeScript e Styled-components"
+            content="Site pessoal de Hugo Defante - Desenvolvido por Jean Wisotscki"
           />
-          {/* <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" /> */}
+
+          {/* favicon */}
+          <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+
+          {/* fonts */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
