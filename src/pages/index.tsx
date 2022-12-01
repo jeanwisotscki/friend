@@ -1,21 +1,21 @@
 import Link from "next/link";
-import { GlitchText } from "../components/GlitchText";
-import { LayoutBase } from "../components/LayoutBase";
+
+import * as Comp from "../components";
 
 import * as Atom from "./styles";
 
 export default function Home() {
   return (
-    <LayoutBase>
+    <Comp.LayoutBase>
       <Atom.GlitchWrapper>
         <div>
-          <GlitchText text="Hugo" />
-          <GlitchText text="Defante" />
+          <Comp.GlitchText text="Hugo" />
+          <Comp.GlitchText text="Defante" />
         </div>
       </Atom.GlitchWrapper>
       <Atom.LinkWrapper>
         <Link href={"/"}>Vasculhar</Link>
       </Atom.LinkWrapper>
-    </LayoutBase>
+    </Comp.LayoutBase>
   );
 }
