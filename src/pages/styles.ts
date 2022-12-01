@@ -67,12 +67,6 @@ const glitch = keyframes`
 
 `;
 
-export const Container = styled.div`
-  max-width: 50rem;
-  width: 80%;
-  margin: 0 auto;
-`;
-
 export const GlitchWrapper = styled.div`
   height: 85vh;
   display: flex;

@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { GlitchText } from "../components/GlitchText";
+import { LayoutBase } from "../components/LayoutBase";
 
 import * as Atom from "./styles";
 
 export default function Home() {
   return (
-    <Atom.Container>
+    <LayoutBase>
       <Atom.GlitchWrapper>
         <div>
           <GlitchText text="Hugo" />
@@ -15,6 +16,6 @@ export default function Home() {
       <Atom.LinkWrapper>
         <Link href={"/"}>Vasculhar</Link>
       </Atom.LinkWrapper>
-    </Atom.Container>
+    </LayoutBase>
   );
 }
