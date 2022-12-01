@@ -1,20 +1,20 @@
-import styled from "styled-components";
-import { GlitchText } from "./styles";
+import Link from "next/link";
+import { GlitchText } from "../components/GlitchText";
 
-const Center = styled.div`
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import * as Atom from "./styles";
 
 export default function Home() {
   return (
-    <Center>
-      <div>
-        <GlitchText data-text="hugo">hugo</GlitchText>
-        <GlitchText data-text="defante">defante</GlitchText>
-      </div>
-    </Center>
+    <Atom.Container>
+      <Atom.GlitchWrapper>
+        <div>
+          <GlitchText text="Hugo" />
+          <GlitchText text="Defante" />
+        </div>
+      </Atom.GlitchWrapper>
+      <Atom.LinkWrapper>
+        <Link href={"/"}>Vasculhar</Link>
+      </Atom.LinkWrapper>
+    </Atom.Container>
   );
 }

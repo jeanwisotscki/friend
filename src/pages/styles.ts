@@ -67,6 +67,19 @@ const glitch = keyframes`
 
 `;
 
+export const Container = styled.div`
+  max-width: 50rem;
+  width: 80%;
+  margin: 0 auto;
+`;
+
+export const GlitchWrapper = styled.div`
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const GlitchText = styled.p`
   position: relative;
   margin: 0 auto;
@@ -102,11 +115,29 @@ export const GlitchText = styled.p`
   &::before {
     left: 7px;
     text-shadow: 1px 5 green;
-    animation: ${glitch} 14s infinite linear alternate-reverse;
+    animation: ${glitch} 3s infinite linear alternate-reverse;
   }
   &::after {
     left: 3px;
     text-shadow: -1px 0 red;
-    animation: ${glitch} 13s infinite linear alternate-reverse;
+    animation: ${glitch} 2s infinite linear alternate-reverse;
+  }
+`;
+
+export const LinkWrapper = styled.div`
+  text-align: right;
+
+  a {
+    transition: 0.2s;
+
+    &:hover {
+      color: ${(props) => props.theme.colors.yellow};
+    }
+  }
+
+  @media screen and (max-width: 444px) {
+    a {
+      font-size: 0.8rem;
+    }
   }
 `;
