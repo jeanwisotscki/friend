@@ -22,6 +22,7 @@ const Glitch = keyframes`
 `;
 
 export const TextGlitch = styled.p`
+  color: ${(props) => props.theme.colors.primary};
   position: relative;
   font-size: 4rem;
   text-transform: uppercase;

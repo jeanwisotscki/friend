@@ -122,6 +122,7 @@ export const LinkWrapper = styled.div`
   text-align: right;
 
   a {
+    color: ${(props) => props.theme.colors.primary};
     transition: 0.2s;
 
     &:hover {

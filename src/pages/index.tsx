@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-import * as Comp from "../components";
-
 import * as Atom from "./styles";
+
+import * as Comp from "../components";
 
 export default function Home() {
   return (
