@@ -14,7 +14,7 @@ export default function Home() {
         </div>
       </Atom.GlitchWrapper>
       <Atom.LinkWrapper>
-        <Link href={"/"}>Vasculhar</Link>
+        <Link href={"/menu"}>Vasculhar</Link>
       </Atom.LinkWrapper>
     </Comp.LayoutBase>
   );
