@@ -20,15 +20,28 @@ export const MainMenuContainer = styled.div`
     gap: 1rem;
 
     li {
-      background-color: blue;
+      background-image: linear-gradient(
+        to bottom,
+        #0044ff,
+        #003aff,
+        #002eff,
+        #001ecc,
+        #0000aa
+      );
       padding: 1rem;
       text-align: center;
       cursor: pointer;
       border: double white;
-      transition: 0.2s;
 
       &:hover {
-        background-color: orange;
+        background-image: linear-gradient(
+          to bottom,
+          #ff8303,
+          #ff7900,
+          #fe6e00,
+          #fe5000,
+          #fd4000
+        );
       }
     }
   }
