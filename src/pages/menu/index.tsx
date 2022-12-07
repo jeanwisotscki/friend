@@ -9,8 +9,6 @@ import { useAudioEffects } from "../../hooks/useAudioEffects";
 export default function Menu() {
   const menuHoverAudio = useAudioEffects("/audios/menu-hover-effect.mp3");
 
-  const playAudioEffect = () => menuHoverAudio.current?.play();
-
   return (
     <Comp.LayoutBase>
       <Atom.Container>
@@ -20,19 +18,27 @@ export default function Menu() {
         <Atom.MainMenuContainer>
           <ul>
             <Link href={"/wikihugo"}>
-              <li onMouseEnter={playAudioEffect}>WikiHugo</li>
+              <li onMouseEnter={() => menuHoverAudio.current?.play()}>
+                WikiHugo
+              </li>
             </Link>
 
             <Link href={"/musicas"}>
-              <li onMouseEnter={playAudioEffect}>Músicas autorais</li>
+              <li onMouseEnter={() => menuHoverAudio.current?.play()}>
+                Músicas autorais
+              </li>
             </Link>
 
             <Link href={"/contato"}>
-              <li onMouseEnter={playAudioEffect}>Contato</li>
+              <li onMouseEnter={() => menuHoverAudio.current?.play()}>
+                Contato
+              </li>
             </Link>
 
             <Link href={"/"}>
-              <li onMouseEnter={playAudioEffect}>Voltar</li>
+              <li onMouseEnter={() => menuHoverAudio.current?.play()}>
+                Voltar
+              </li>
             </Link>
           </ul>
         </Atom.MainMenuContainer>
