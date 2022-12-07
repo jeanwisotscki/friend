@@ -9,8 +9,8 @@ export default function Home() {
     <Comp.LayoutBase>
       <Atom.GlitchWrapper>
         <div>
-          <Comp.GlitchText text="Hugo" />
-          <Comp.GlitchText text="Defante" />
+          <Atom.MainText>hugo</Atom.MainText>
+          <Atom.MainText>defante</Atom.MainText>
         </div>
       </Atom.GlitchWrapper>
       <Atom.LinkWrapper>
