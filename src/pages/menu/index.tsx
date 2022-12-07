@@ -4,15 +4,12 @@ import Link from "next/link";
 import * as Atom from "./styles";
 
 import * as Comp from "../../components";
+import { useAudioEffects } from "../../hooks/useAudioEffects";
 
 export default function Menu() {
-  const menuAudioEffect = React.useRef<HTMLAudioElement | undefined>(
-    typeof Audio !== "undefined"
-      ? new Audio("/menu-hover-effect.mp3")
-      : undefined
-  );
+  const menuHoverAudio = useAudioEffects("/audios/menu-hover-effect.mp3");
 
-  const playAudioEffect = () => menuAudioEffect.current?.play();
+  const playAudioEffect = () => menuHoverAudio.current?.play();
 
   return (
     <Comp.LayoutBase>
