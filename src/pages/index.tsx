@@ -14,9 +14,9 @@ export default function Home() {
           </Atom.MainText>
         </Atom.MainTextWrapper>
 
-        <Atom.LinkWrapper>
+        <Atom.PressStartWrapper>
           <Link href={"/menu"}>press start button</Link>
-        </Atom.LinkWrapper>
+        </Atom.PressStartWrapper>
 
         <Atom.CopyRightWrapper>
           <p>&copy; 2022 U.T.I DO ROCK</p>

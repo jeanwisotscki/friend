@@ -1,7 +1,7 @@
 const sizes = {
-  xs: "320px",
-  sm: "768px",
-  lg: "1023px",
+  xs: "350px",
+  sm: "900px",
+  lg: "1200px",
 };
 
 const devices = {

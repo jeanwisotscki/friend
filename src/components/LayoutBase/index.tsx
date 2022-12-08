@@ -13,8 +13,6 @@ const Container = styled.main`
   align-items: center;
   justify-content: center;
 
-  border: 1px solid yellow;
-
   margin: 0 auto;
 
   @media screen and (${breakpoints.tablet}) {

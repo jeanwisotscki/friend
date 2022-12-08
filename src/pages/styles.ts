@@ -1,19 +1,30 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import breakpoints from "../common/breakpoints";
 
+const PressStartAnimation = keyframes`
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+`;
+
 export const Container = styled.div`
   width: 100%;
-  border: 2px solid blue;
 `;
 
 export const MainTextWrapper = styled.div`
   text-align: center;
-  margin-top: 10rem;
+  border: 2px solid transparent;
 `;
 
 export const MainText = styled.p`
-  font-size: 5rem;
+  font-size: 6rem;
   text-transform: uppercase;
 
   transform-origin: 50% 0%;
@@ -36,24 +47,50 @@ export const MainText = styled.p`
     top: 0;
     left: 0;
     color: ${(props) => props.theme.colors.primary};
-    font-size: 5rem;
+    font-size: 6rem;
     text-shadow: -0.25rem -0.25rem;
   }
 
+  // < 1200
   @media screen and (${breakpoints.desktop}) {
+    font-size: 5rem;
+
+    &::before {
+      font-size: 5rem;
+    }
+  }
+
+  // < 900
+  @media screen and (${breakpoints.tablet}) {
     font-size: 4rem;
 
     &::before {
       font-size: 4rem;
     }
   }
-  @media screen and (${breakpoints.tablet}) {
+
+  @media screen and (max-width: 665px) {
+    font-size: 3.5rem;
+
+    &::before {
+      font-size: 3.5rem;
+    }
+  }
+  @media screen and (max-width: 560px) {
+    font-size: 3rem;
+
+    &::before {
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 455px) {
     font-size: 2.5rem;
 
     &::before {
       font-size: 2.5rem;
     }
   }
+
   @media screen and (${breakpoints.smartphone}) {
     font-size: 2rem;
 
@@ -63,7 +100,7 @@ export const MainText = styled.p`
   }
 `;
 
-export const LinkWrapper = styled.div`
+export const PressStartWrapper = styled.div`
   text-align: center;
   text-transform: uppercase;
 
@@ -71,21 +108,15 @@ export const LinkWrapper = styled.div`
 
   a {
     color: ${(props) => props.theme.colors.primary};
+
     padding: 1rem;
+
     transition: 0.2s;
-    position: relative;
+    animation: ${PressStartAnimation} 2s forwards infinite;
 
     &:hover {
       color: ${(props) => props.theme.colors.yellow};
-
-      &::before {
-        content: ">";
-        width: 10px;
-        height: 10px;
-        position: absolute;
-        left: -10px;
-        font-weight: bold;
-      }
+      animation: none;
     }
   }
 
@@ -110,7 +141,6 @@ export const CopyRightWrapper = styled.div`
   width: 100%;
   color: white;
   text-align: center;
-  border: 1px solid red;
 
   @media screen and (${breakpoints.desktop}) {
     p {
