@@ -7,15 +7,21 @@ import * as Comp from "../components";
 export default function Home() {
   return (
     <Comp.LayoutBase>
-      <Atom.MainTextWrapper>
-        <Atom.MainText data-text="hugo defante">hugo defante</Atom.MainText>
-        <div>
+      <Atom.Container>
+        <Atom.MainTextWrapper>
+          <Atom.MainText data-text="hugo defante">
+            hugo <br /> defante
+          </Atom.MainText>
+        </Atom.MainTextWrapper>
+
+        <Atom.LinkWrapper>
+          <Link href={"/menu"}>press start button</Link>
+        </Atom.LinkWrapper>
+
+        <Atom.CopyRightWrapper>
           <p>&copy; 2022 U.T.I DO ROCK</p>
-        </div>
-      </Atom.MainTextWrapper>
-      <Atom.LinkWrapper>
-        <Link href={"/menu"}>press start button</Link>
-      </Atom.LinkWrapper>
+        </Atom.CopyRightWrapper>
+      </Atom.Container>
     </Comp.LayoutBase>
   );
 }

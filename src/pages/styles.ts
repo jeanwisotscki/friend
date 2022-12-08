@@ -1,19 +1,15 @@
 import styled from "styled-components";
 
-export const MainTextWrapper = styled.div`
-  height: 75vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+import breakpoints from "../common/breakpoints";
 
-  div {
-    width: 100%;
-    margin-top: 2rem;
-    color: white;
-    text-align: right;
-  }
+export const Container = styled.div`
+  width: 100%;
+  border: 2px solid blue;
+`;
+
+export const MainTextWrapper = styled.div`
+  text-align: center;
+  margin-top: 10rem;
 `;
 
 export const MainText = styled.p`
@@ -27,8 +23,8 @@ export const MainText = styled.p`
   background: linear-gradient(
     180deg,
     rgba(103, 34, 200, 1) 11%,
-    rgba(0, 194, 255, 1) 54%,
-    rgba(238, 238, 238, 1) 87%
+    rgba(0, 194, 255, 1) 64%,
+    rgba(208, 208, 208, 1) 87%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -39,26 +35,26 @@ export const MainText = styled.p`
     position: absolute;
     top: 0;
     left: 0;
-    color: #fff;
+    color: ${(props) => props.theme.colors.primary};
     font-size: 5rem;
-    text-shadow: -5px -5px;
+    text-shadow: -0.25rem -0.25rem;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (${breakpoints.desktop}) {
     font-size: 4rem;
 
     &::before {
       font-size: 4rem;
     }
   }
-  @media screen and (max-width: 444px) {
+  @media screen and (${breakpoints.tablet}) {
     font-size: 2.5rem;
 
     &::before {
       font-size: 2.5rem;
     }
   }
-  @media screen and (max-width: 297px) {
+  @media screen and (${breakpoints.smartphone}) {
     font-size: 2rem;
 
     &::before {
@@ -70,6 +66,8 @@ export const MainText = styled.p`
 export const LinkWrapper = styled.div`
   text-align: center;
   text-transform: uppercase;
+
+  margin: 6rem 0;
 
   a {
     color: ${(props) => props.theme.colors.primary};
@@ -91,9 +89,42 @@ export const LinkWrapper = styled.div`
     }
   }
 
-  @media screen and (max-width: 444px) {
+  @media screen and (${breakpoints.desktop}) {
+    a {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (${breakpoints.tablet}) {
     a {
       font-size: 0.8rem;
+    }
+  }
+  @media screen and (${breakpoints.smartphone}) {
+    a {
+      font-size: 0.6rem;
+    }
+  }
+`;
+
+export const CopyRightWrapper = styled.div`
+  width: 100%;
+  color: white;
+  text-align: center;
+  border: 1px solid red;
+
+  @media screen and (${breakpoints.desktop}) {
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (${breakpoints.tablet}) {
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  @media screen and (${breakpoints.smartphone}) {
+    p {
+      font-size: 0.6rem;
     }
   }
 `;
