@@ -18,26 +18,42 @@ export default function Menu() {
         <Atom.MainMenuContainer>
           <ul>
             <Link href={"/wikihugo"}>
-              <li onMouseEnter={() => menuHoverAudio.current?.play()}>
-                WikiHugo
+              <li>
+                <Atom.MenuButton
+                  onMouseEnter={() => menuHoverAudio.current?.play()}
+                >
+                  WikiHugo
+                </Atom.MenuButton>
               </li>
             </Link>
 
             <Link href={"/musicas"}>
-              <li onMouseEnter={() => menuHoverAudio.current?.play()}>
-                Músicas autorais
+              <li>
+                <Atom.MenuButton
+                  onMouseEnter={() => menuHoverAudio.current?.play()}
+                >
+                  Músicas autorais
+                </Atom.MenuButton>
               </li>
             </Link>
 
             <Link href={"/contato"}>
-              <li onMouseEnter={() => menuHoverAudio.current?.play()}>
-                Contato
+              <li>
+                <Atom.MenuButton
+                  onMouseEnter={() => menuHoverAudio.current?.play()}
+                >
+                  Contato
+                </Atom.MenuButton>
               </li>
             </Link>
 
             <Link href={"/"}>
-              <li onMouseEnter={() => menuHoverAudio.current?.play()}>
-                Voltar
+              <li>
+                <Atom.ButtonOrangeOnHover
+                  onMouseEnter={() => menuHoverAudio.current?.play()}
+                >
+                  Voltar
+                </Atom.ButtonOrangeOnHover>
               </li>
             </Link>
           </ul>
