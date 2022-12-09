@@ -18,7 +18,7 @@ const Container = styled.main`
   @media screen and (${breakpoints.tablet}) {
     & {
       width: 100%;
-      padding: 1rem;
+      padding: 0 1rem;
     }
   }
 `;
