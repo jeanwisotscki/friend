@@ -1,11 +1,29 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 3rem 0;
-  color: #fff;
+  width: 100%;
   height: 100vh;
+
+  color: #fff;
+
   display: flex;
   flex-direction: column;
+  padding: 3rem 0;
+`;
+
+export const Title = styled.h2`
+  background: #fe6e00;
+  background-image: linear-gradient(
+    to bottom,
+    #fff303,
+    #fff900,
+    #fe6e00,
+    #fe5000,
+    #fd1000
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 export const MainMenuContainer = styled.div`
@@ -23,15 +41,17 @@ export const MainMenuContainer = styled.div`
 
 export const MenuButton = styled.button`
   width: 100%;
-  text-transform: uppercase;
-  padding: 1rem;
-  text-align: center;
-  cursor: pointer;
-  background: none;
+
   color: #fff;
+  background: none;
+
   font-size: 1rem;
-  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+
   border: 0;
+  outline: none;
+  padding: 1rem;
   cursor: pointer;
 
   &:hover {

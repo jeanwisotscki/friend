@@ -12,9 +12,8 @@ export default function Menu() {
   return (
     <Comp.LayoutBase>
       <Atom.Container>
-        <div>
-          <h2>Main Menu</h2>
-        </div>
+        <Atom.Title>Main Menu</Atom.Title>
+
         <Atom.MainMenuContainer>
           <ul>
             <Link href={"/wikihugo"}>
