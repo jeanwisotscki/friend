@@ -1,0 +1,30 @@
+[
+  {
+    "song": "Showtime",
+    "album": "Electron",
+    "author": "Hugo Defante",
+    "songHref": "https://www.amazon.com/dp/B08J3TQMP6/ref=sr_1_1?crid=32M3Q7CF8PJ3S&keywords=hugo+defante&marketplaceId=ATVPDKIKX0DER&musicTerritory=US&qid=1670867807&s=arts-crafts-intl-ship&sprefix=hugo+defante%2Carts-crafts-intl-ship%2C172&sr=1-1&trackAsin=B08J3TQMP6",
+    "imageHref": "https://m.media-amazon.com/images/I/91C6rSwBREL._AC_UL320_.jpg"
+  },
+  {
+    "song": "Electron",
+    "album": "Electron",
+    "author": "Hugo Defante",
+    "songHref": "https://www.amazon.com/dp/B08J3RTVDZ/ref=sr_1_2?crid=32M3Q7CF8PJ3S&keywords=hugo+defante&qid=1670867807&s=arts-crafts-intl-ship&sprefix=hugo+defante%2Carts-crafts-intl-ship%2C172&sr=1-2",
+    "imageHref": "https://m.media-amazon.com/images/I/91C6rSwBREL._AC_UL320_.jpg"
+  },
+  {
+    "song": "Message From The Past",
+    "album": "Electron",
+    "author": "Hugo Defante",
+    "songHref": "https://www.amazon.com/dp/B08J3P9DFB/ref=sr_1_3?crid=32M3Q7CF8PJ3S&keywords=hugo+defante&marketplaceId=ATVPDKIKX0DER&musicTerritory=US&qid=1670867807&s=arts-crafts-intl-ship&sprefix=hugo+defante%2Carts-crafts-intl-ship%2C172&sr=1-3&trackAsin=B08J3P9DFB",
+    "imageHref": "https://m.media-amazon.com/images/I/91C6rSwBREL._AC_UL320_.jpg"
+  },
+  {
+    "song": "Aquilonia",
+    "album": "Aquilonia",
+    "author": "Hugo Defante",
+    "songHref": "https://www.amazon.com/dp/B082XJ5CC4/ref=sr_1_5?crid=32M3Q7CF8PJ3S&keywords=hugo+defante&marketplaceId=ATVPDKIKX0DER&musicTerritory=US&qid=1670867807&s=arts-crafts-intl-ship&sprefix=hugo+defante%2Carts-crafts-intl-ship%2C172&sr=1-5&trackAsin=B082XJ5CC4",
+    "imageHref": "https://m.media-amazon.com/images/I/91iLN8ytt0L._AC_UL320_.jpg"
+  }
+]
