@@ -36,12 +36,12 @@ export default function Menu() {
               </li>
             </Link>
 
-            <Link href={"/contato"}>
+            <Link href={"/sociais"}>
               <li>
                 <Atom.MenuButton
                   onMouseEnter={() => menuHoverAudio.current?.play()}
                 >
-                  Contato
+                  Redes sociais
                 </Atom.MenuButton>
               </li>
             </Link>
