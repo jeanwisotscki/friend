@@ -9,48 +9,54 @@ export default function WikiHugo() {
   return (
     <Comp.LayoutBase>
       <Atom.Container>
-        <h2>Hugo Defante</h2>
-        <br />
-        <hr />
-        <br />
-        <p>Origem: WikiHugo, a enciclopédia privada.</p>
-        <br />
-        <Atom.Wrapper>
+        <Atom.Header>
+          <h2>Hugo Defante</h2>
+          <hr />
+          <span>Origem: WikiHugo, a enciclopédia privada.</span>
+        </Atom.Header>
+
+        <Atom.MainContentWrapper>
           <Atom.AsideContainer>
-            <table>
-              <tbody>
+            <span>Hugo Defante</span>
+            <div>
+              <Image
+                width={240}
+                height={300}
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Hugo_Defante.jpg/1200px-Hugo_Defante.jpg"
+                alt="imagem da pessoa hugo defante"
+              />
+            </div>
+            <Atom.PersonalInfos>
+              <span>Informações pessoais</span>
+              <table>
                 <tr>
-                  <th>
-                    <p>Hugo Defante</p>
-                  </th>
+                  <td>Nome completo</td>
+                  <td>Hugo Defante Rodrigues</td>
                 </tr>
                 <tr>
-                  <td>
-                    <div>
-                      <Image
-                        width={240}
-                        height={300}
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Hugo_Defante.jpg/1200px-Hugo_Defante.jpg"
-                        alt="imagem da pessoa hugo defante"
-                      />
-                    </div>
-                  </td>
+                  <td>Nacionalidade</td>
+                  <td>Brasileiro</td>
                 </tr>
                 <tr>
-                  <th>Informações pessoais</th>
+                  <td>Nascimento</td>
+                  <td>26 de maio de 1987. Rio de Janeiro, RJ.</td>
                 </tr>
                 <tr>
-                  <td>nome</td>
-                  <td>hugo defante</td>
+                  <td>Ocupações</td>
+                  <td>Músico, compositor, streamer e pixel artist.</td>
                 </tr>
-              </tbody>
-            </table>
+              </table>
+            </Atom.PersonalInfos>
           </Atom.AsideContainer>
-          <Atom.Texts>
+          <Atom.TextContainer>
             <p>
-              Hugo Defante é um guitarrista, streamer e pixelarteiro, nascido na
-              cidade do Rio de Janeiro em 26 de maio de 1987. Guitarrista á mais
-              de 20 anos, Hugo é com toda certeza um dos guitarristas do Brasil!
+              <strong>Hugo Defante Rodrigues</strong> (26 de maio de 1987) é um
+              guitarrista, compositor, streamer e pixel artist brasileiro.
+              Guitarrista á mais de 20 anos, Hugo é com toda certeza um dos
+              guitarristas do Brasil! É um dos mais influentes guitarristas de
+              sua cidade, principalmente quando se trata de heavy metal.
+            </p>
+            <p>
               Informações sobre Hugo Defante: Para Hugo, FF é Final Fantasy;
               Hugo tem 1,80 de altura; guitarrista do Projeto Robson;
               marombeiro...
@@ -63,8 +69,8 @@ export default function WikiHugo() {
               Hugo tem 1,80 de altura; guitarrista do Projeto Robson;
               marombeiro...
             </p>
-          </Atom.Texts>
-        </Atom.Wrapper>
+          </Atom.TextContainer>
+        </Atom.MainContentWrapper>
       </Atom.Container>
     </Comp.LayoutBase>
   );
