@@ -50,11 +50,12 @@ export default function WikiHugo() {
           </Atom.AsideContainer>
           <Atom.TextContainer>
             <p>
-              <strong>Hugo Defante Rodrigues</strong> (26 de maio de 1987) é um
-              guitarrista, compositor, streamer e pixel artist brasileiro.
-              Guitarrista á mais de 20 anos, Hugo é com toda certeza um dos
-              guitarristas do Brasil! É um dos mais influentes guitarristas de
-              sua cidade, principalmente quando se trata de heavy metal.
+              <strong>Hugo Defante Rodrigues</strong>{" "}
+              <i> (26 de maio de 1987)</i> é um guitarrista, compositor,
+              streamer e pixel artist brasileiro. Guitarrista á mais de 20 anos,
+              Hugo é com toda certeza um dos guitarristas do Brasil! É um dos
+              mais influentes guitarristas de sua cidade, principalmente quando
+              falamos de heavy metal.
             </p>
             <p>
               Informações sobre Hugo Defante: Para Hugo, FF é Final Fantasy;

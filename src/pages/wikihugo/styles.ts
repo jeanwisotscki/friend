@@ -74,7 +74,8 @@ export const TextContainer = styled.div`
     font-family: Arial, Helvetica, sans-serif;
     margin: 2rem 0;
 
-    strong {
+    strong,
+    i {
       font-family: Arial, Helvetica, sans-serif;
     }
   }
