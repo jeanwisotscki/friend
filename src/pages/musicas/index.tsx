@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function Musicas() {
   return (
-    <Comp.LayoutBase>
+    <Comp.LayoutBase backPageHref="/menu">
       <Atom.Container>
         <h2>Musicas</h2>
 
@@ -32,7 +32,6 @@ export default function Musicas() {
             </Atom.SongCard>
           ))}
         </Atom.SongsWrap>
-        <Link href={"/menu"}>Voltar</Link>
       </Atom.Container>
     </Comp.LayoutBase>
   );

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
@@ -23,10 +24,47 @@ const Container = styled.main`
   }
 `;
 
+const BackPageWrapper = styled.div`
+  display: inline-block;
+  margin: 3rem;
+
+  a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "<";
+      display: block;
+      padding: 0.3rem;
+      background-color: #ccc;
+      color: #000;
+
+      font-size: 1.1rem;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+  }
+
+  @media screen and (${breakpoints.tablet}) {
+    margin: 3rem 1rem;
+  }
+`;
+
 interface ILayoutBaseProps {
+  backPageHref?: string;
   children: React.ReactNode;
 }
 
-export const LayoutBase = ({ children }: ILayoutBaseProps) => {
-  return <Container>{children}</Container>;
+export const LayoutBase = ({ children, backPageHref }: ILayoutBaseProps) => {
+  return (
+    <>
+      {backPageHref && (
+        <BackPageWrapper>
+          <Link href={`${backPageHref}`}>Voltar</Link>
+        </BackPageWrapper>
+      )}
+      <Container>{children}</Container>
+    </>
+  );
 };

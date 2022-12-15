@@ -2,25 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   color: #fff;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 80vh;
-  padding: 1rem;
-
-  scrollbar-width: thin; /* "auto" or "thin" */
-  scrollbar-color: white black; /* scroll thumb and track */
-
-  &::-webkit-scrollbar {
-    width: 8px; /* width of the entire scrollbar */
-  }
-  &::-webkit-scrollbar-track {
-    background: #020202; /* color of the tracking area */
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #ccc; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-    border: 3px solid #ccc; /* creates padding around scroll thumb */
-  }
+  padding: 0 1rem;
+  padding-bottom: 3rem;
 `;
 
 export const Header = styled.header`

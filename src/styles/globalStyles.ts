@@ -18,22 +18,26 @@ export const GlobalStyle = createGlobalStyle`
     );
     background-size: 10px 10px;
 
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
-    scrollbar-width: thin; /* firefox */
-    scrollbar-color: #333 #aaa; /* firefox */
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: white black; /* scroll thumb and track */
+
+    &::-webkit-scrollbar {
+      width: 8px; /* width of the entire scrollbar */
+    }
+    &::-webkit-scrollbar-track {
+      background: #020202; /* color of the tracking area */
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #ccc; /* color of the scroll thumb */
+      border-radius: 20px; /* roundness of the scroll thumb */
+      border: 3px solid #ccc; /* creates padding around scroll thumb */
+    }
   }
 
-  body::-webkit-scrollbar {
-    width: 3px;
-  }
-  body::-webkit-scrollbar-track {
-    background: #aaa;
-    padding: 2px;
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: #333;
-  }
+
 
   a {
     color: inherit;

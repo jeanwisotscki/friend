@@ -7,7 +7,7 @@ import * as Comp from "../../components";
 
 export default function WikiHugo() {
   return (
-    <Comp.LayoutBase>
+    <Comp.LayoutBase backPageHref="/menu">
       <Atom.Container>
         <Atom.Header>
           <h2>Hugo Defante</h2>
@@ -61,9 +61,9 @@ export default function WikiHugo() {
             <p>
               Influenciado pelos metais pesados de <strong>Slayer</strong> e os
               teclados sintetizados de <strong>Iron Maiden</strong>, Hugo é
-              conhecido na sua região por ser um dos precursores do chamado{" "}
-              <strong>Synth metal</strong>, que envolve heavy metal com
-              elementos de música eletrônica. Junto ao seu irmão{" "}
+              conhecido por ser um dos precursores do chamado{" "}
+              <strong>Synth metal</strong> no Rio de Janeiro, gênero que envolve
+              heavy metal com elementos de música eletrônica. Junto ao seu irmão{" "}
               <strong>Diogo Defante</strong>, também tornou-se um dos pioneiros
               do <strong>Robson metal</strong>, com a temática humorística de
               suas letras e com os sons dúvidosos do seu berrante criando a

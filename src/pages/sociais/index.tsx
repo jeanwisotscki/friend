@@ -10,7 +10,7 @@ import * as Icon from "../../../public/icons";
 
 export default function Sociais() {
   return (
-    <Comp.LayoutBase>
+    <Comp.LayoutBase backPageHref="/menu">
       <Atom.Container>
         <h2>Me siga nas redes sociais</h2>
 
@@ -60,10 +60,6 @@ export default function Sociais() {
             </li>
           </Link>
         </ul>
-
-        <Link href={"/menu"}>
-          <span>Voltar</span>
-        </Link>
       </Atom.Container>
     </Comp.LayoutBase>
   );
