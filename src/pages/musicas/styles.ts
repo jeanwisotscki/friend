@@ -1,47 +1,62 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 80vh;
   color: #fff;
+
+  hr {
+    margin: 0.5rem 0;
+  }
 `;
 
 export const SongsWrap = styled.div`
-  height: 80vh;
-  padding: 1rem;
-  overflow-y: scroll;
-  scrollbar-width: thin;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-  &::-webkit-scrollbar {
-    width: 12px; /* width of the entire scrollbar */
-  }
+  gap: 2rem;
 
-  &::-webkit-scrollbar-track {
-    background: orange; /* color of the tracking area */
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: blue; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-    border: 3px solid orange; /* creates padding around scroll thumb */
-  }
+  margin-top: 2rem;
 `;
 
 export const SongCard = styled.div`
-  border: double;
-  margin: 1rem 0;
+  min-height: 420px;
+  max-width: 256px;
   display: flex;
-  gap: 2rem;
-  overflow: hidden;
+  flex-direction: column;
+  border: double;
   position: relative;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.051);
+  }
 
   div {
-    padding: 2rem;
+    padding: 1rem;
+
+    h3 {
+      font-size: 1rem;
+      line-height: 1.3;
+    }
+
+    p {
+      line-height: 1.3;
+      font-size: 0.8rem;
+      color: cyan;
+    }
 
     a {
-      background-color: red;
+      display: block;
+      background-color: #bbb;
+      color: #000;
+      padding: 0.5rem;
       position: absolute;
-      bottom: 20px;
-      right: 20px;
+      left: 20px;
+      bottom: 15px;
+
+      &:hover {
+        background-color: #ffffff;
+      }
     }
   }
 `;

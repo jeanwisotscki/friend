@@ -15,18 +15,19 @@ const Container = styled.main`
   justify-content: center;
 
   margin: 0 auto;
+  padding: 0 0 4rem;
 
   @media screen and (${breakpoints.tablet}) {
     & {
       width: 100%;
-      padding: 0 1rem;
+      padding: 0 1rem 4rem;
     }
   }
 `;
 
 const BackPageWrapper = styled.div`
   display: inline-block;
-  margin: 3rem;
+  margin: 3rem 3rem 1rem;
 
   a {
     color: #fff;

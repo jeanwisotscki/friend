@@ -24,27 +24,30 @@ export default function WikiHugo() {
                 height={300}
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Hugo_Defante.jpg/1200px-Hugo_Defante.jpg"
                 alt="imagem da pessoa hugo defante"
+                priority
               />
             </div>
             <Atom.PersonalInfos>
               <span>Informações pessoais</span>
               <table>
-                <tr>
-                  <td>Nome completo</td>
-                  <td>Hugo Defante Rodrigues</td>
-                </tr>
-                <tr>
-                  <td>Nacionalidade</td>
-                  <td>Brasileiro</td>
-                </tr>
-                <tr>
-                  <td>Nascimento</td>
-                  <td>26 de maio de 1987. Rio de Janeiro, RJ.</td>
-                </tr>
-                <tr>
-                  <td>Ocupações</td>
-                  <td>Músico, compositor, streamer e pixel artist.</td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td>Nome completo</td>
+                    <td>Hugo Defante Rodrigues</td>
+                  </tr>
+                  <tr>
+                    <td>Nacionalidade</td>
+                    <td>Brasileiro</td>
+                  </tr>
+                  <tr>
+                    <td>Nascimento</td>
+                    <td>26 de maio de 1987. Rio de Janeiro, RJ.</td>
+                  </tr>
+                  <tr>
+                    <td>Ocupações</td>
+                    <td>Músico, compositor, streamer e pixel artist.</td>
+                  </tr>
+                </tbody>
               </table>
             </Atom.PersonalInfos>
           </Atom.AsideContainer>

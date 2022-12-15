@@ -12,14 +12,15 @@ export default function Musicas() {
   return (
     <Comp.LayoutBase backPageHref="/menu">
       <Atom.Container>
-        <h2>Musicas</h2>
+        <h2>Músicas autorais</h2>
+        <hr />
 
         <Atom.SongsWrap>
           {musicas.map((item, index: number) => (
             <Atom.SongCard key={index}>
               <Image
-                width={200}
-                height={200}
+                width={250}
+                height={250}
                 src={item.imageHref}
                 alt=" capa do album"
               />
@@ -27,7 +28,9 @@ export default function Musicas() {
                 <h3>{item.song}</h3>
                 <p>{item.album}</p>
                 <p>{item.author}</p>
-                <a href={item.songHref}>compre agora</a>
+                <a href={item.songHref} target="_blank" rel="noreferrer">
+                  Compre agora
+                </a>
               </div>
             </Atom.SongCard>
           ))}
