@@ -48,27 +48,119 @@ export default function WikiHugo() {
               </table>
             </Atom.PersonalInfos>
           </Atom.AsideContainer>
+
           <Atom.TextContainer>
             <p>
+              <strong>Hugo Defante</strong>, nome artístico de{" "}
               <strong>Hugo Defante Rodrigues</strong>{" "}
-              <i> (26 de maio de 1987)</i> é um guitarrista, compositor,
-              streamer e pixel artist brasileiro. Guitarrista á mais de 20 anos,
-              Hugo é com toda certeza um dos guitarristas do Brasil! É um dos
-              mais influentes guitarristas de sua cidade, principalmente quando
-              falamos de heavy metal.
+              <i> (Rio de Janeiro, 26 de maio de 1987)</i> é um virtuoso
+              guitarrista carioca, considerado na sua região, um dos melhores de
+              seu estilo.
+            </p>
+
+            <p>
+              Influenciado pelos metais pesados de <strong>Slayer</strong> e os
+              teclados sintetizados de <strong>Iron Maiden</strong>, Hugo é
+              conhecido na sua região por ser um dos precursores do chamado{" "}
+              <strong>Synth metal</strong>, que envolve heavy metal com
+              elementos de música eletrônica. Junto ao seu irmão{" "}
+              <strong>Diogo Defante</strong>, também tornou-se um dos pioneiros
+              do <strong>Robson metal</strong>, com a temática humorística de
+              suas letras e com os sons dúvidosos do seu berrante criando a
+              atmosférica bem-humorada das canções. Seguindo estes estilos, ele
+              ajudou a popularizar o <strong>berrante</strong>{" "}
+              <i>
+                (espécie de buzina usada desde a antiguidade por pastores de
+                ovelhas e gados)
+              </i>{" "}
+              dentro do heavy metal em geral e veio a ser o primeiro guitarrista
+              a tocar esse instrumento em um show para milhares de pessoas. Hugo
+              também já foi considerado o guitarrista mais rápido do Velho
+              Oeste.
             </p>
             <p>
-              Informações sobre Hugo Defante: Para Hugo, FF é Final Fantasy;
-              Hugo tem 1,80 de altura; guitarrista do Projeto Robson;
-              marombeiro...
+              <strong>Hugo Defante</strong> é, além de guitarrista e
+              multi-instrumentista, compositor, streamer e pixel artist.
+              Guitarrista á mais de 20 anos, Hugo é com toda certeza um dos
+              guitarristas do Brasil!
+            </p>
+
+            {/**********************************************/}
+
+            <h2>História</h2>
+            <hr />
+            <p>
+              <strong>Hugo Defante</strong>, nome artístico de{" "}
+              <strong>Hugo Defante Rodrigues</strong>{" "}
+              <i> (Rio de Janeiro, 26 de maio de 1987)</i> é um virtuoso
+              guitarrista carioca, considerado na sua região, um dos melhores de
+              seu estilo.
+            </p>
+
+            <p>
+              Influenciado pelos metais pesados de <strong>Slayer</strong> e os
+              teclados sintetizados de <strong>Iron Maiden</strong>, Hugo é
+              conhecido na sua região por ser um dos precursores do chamado{" "}
+              <strong>Synth metal</strong>, que envolve heavy metal com
+              elementos de música eletrônica. Junto ao seu irmão{" "}
+              <strong>Diogo Defante</strong>, também tornou-se um dos pioneiros
+              do <strong>Robson metal</strong>, com a temática humorística de
+              suas letras e com os sons dúvidosos do seu berrante criando a
+              atmosférica bem-humorada das canções. Seguindo estes estilos, ele
+              ajudou a popularizar o <strong>berrante</strong>{" "}
+              <i>
+                (espécie de buzina usada desde a antiguidade por pastores de
+                ovelhas e gados)
+              </i>{" "}
+              dentro do heavy metal em geral e veio a ser o primeiro guitarrista
+              a tocar esse instrumento em um show para milhares de pessoas. Hugo
+              também já foi considerado o guitarrista mais rápido do Velho
+              Oeste.
             </p>
             <p>
-              Hugo Defante é um guitarrista, streamer e pixelarteiro, nascido na
-              cidade do Rio de Janeiro em 26 de maio de 1987. Guitarrista á mais
-              de 20 anos, Hugo é com toda certeza um dos guitarristas do Brasil!
-              Informações sobre Hugo Defante: Para Hugo, FF é Final Fantasy;
-              Hugo tem 1,80 de altura; guitarrista do Projeto Robson;
-              marombeiro...
+              <strong>Hugo Defante</strong> é, além de guitarrista e
+              multi-instrumentista, compositor, streamer e pixel artist.
+              Guitarrista á mais de 20 anos, Hugo é com toda certeza um dos
+              guitarristas do Brasil!
+            </p>
+
+            {/**********************************************/}
+
+            <h2>Discografia</h2>
+            <hr />
+            <p>
+              <strong>Hugo Defante</strong>, nome artístico de{" "}
+              <strong>Hugo Defante Rodrigues</strong>{" "}
+              <i> (Rio de Janeiro, 26 de maio de 1987)</i> é um virtuoso
+              guitarrista carioca, considerado na sua região, um dos melhores de
+              seu estilo.
+            </p>
+
+            <p>
+              Influenciado pelos metais pesados de <strong>Slayer</strong> e os
+              teclados sintetizados de <strong>Iron Maiden</strong>, Hugo é
+              conhecido na sua região por ser um dos precursores do chamado{" "}
+              <strong>Synth metal</strong>, que envolve heavy metal com
+              elementos de música eletrônica. Junto ao seu irmão{" "}
+              <strong>Diogo Defante</strong>, também tornou-se um dos pioneiros
+              do <strong>Robson metal</strong>, com a temática humorística de
+              suas letras e com os sons dúvidosos do seu berrante criando a
+              atmosférica bem-humorada das canções. Seguindo estes estilos, ele
+              ajudou a popularizar o <strong>berrante</strong>{" "}
+              <i>
+                (espécie de buzina usada desde a antiguidade por pastores de
+                ovelhas e gados)
+              </i>{" "}
+              dentro do heavy metal em geral e veio a ser o primeiro guitarrista
+              a tocar esse instrumento em um show para milhares de pessoas. Hugo
+              também já foi considerado o guitarrista mais rápido do Velho
+              Oeste.
+            </p>
+            <p>
+              <strong>Hugo Defante</strong> é, além de guitarrista e
+              multi-instrumentista, compositor, streamer e pixel artist.
+              Guitarrista á mais de 20 anos, Hugo é com toda certeza um dos
+              guitarristas do Brasil!
             </p>
           </Atom.TextContainer>
         </Atom.MainContentWrapper>
@@ -76,7 +168,3 @@ export default function WikiHugo() {
     </Comp.LayoutBase>
   );
 }
-
-/*
-https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Hugo_Defante.jpg/1200px-Hugo_Defante.jpg
-*/

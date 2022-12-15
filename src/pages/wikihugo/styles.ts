@@ -3,7 +3,24 @@ import styled from "styled-components";
 export const Container = styled.div`
   color: #fff;
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 80vh;
+  padding: 1rem;
+
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: white black; /* scroll thumb and track */
+
+  &::-webkit-scrollbar {
+    width: 8px; /* width of the entire scrollbar */
+  }
+  &::-webkit-scrollbar-track {
+    background: #020202; /* color of the tracking area */
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid #ccc; /* creates padding around scroll thumb */
+  }
 `;
 
 export const Header = styled.header`
@@ -25,7 +42,7 @@ export const AsideContainer = styled.aside`
   width: 300px;
   float: right;
   clear: right;
-  margin: 1rem;
+  margin: 0 0 1rem 1rem;
   border: double;
   text-align: center;
 
@@ -36,6 +53,11 @@ export const AsideContainer = styled.aside`
     text-align: center;
     padding: 1rem;
     margin: 0.5rem;
+  }
+
+  @media screen and (max-width: 574px) {
+    float: none;
+    margin: auto;
   }
 `;
 
@@ -71,12 +93,21 @@ export const TextContainer = styled.div`
   width: 100%;
 
   p {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 2rem 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin: 1rem 0;
+    text-align: justify;
 
     strong,
     i {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Roboto, Arial, Helvetica, sans-serif;
     }
+  }
+
+  h2 {
+    margin-top: 2.5rem;
+  }
+
+  hr {
+    margin: 0.5rem 0;
   }
 `;
