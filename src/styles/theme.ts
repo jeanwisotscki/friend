@@ -2,16 +2,16 @@ import { DefaultTheme } from "styled-components";
 
 export const defaultTheme: DefaultTheme = {
   colors: {
-    primary: "#fefefe",
-    secondary: "#ccc",
+    primary: "#ffffff",
+    secondary: "#bbb",
 
     green: "#26f447",
     purple: "#b93bf4",
     blue: "#2647f4",
     red: "#f43b3b",
-    yellow: "#fb1",
-    pink: "#f37",
-    onyx: "#36313D",
+    yellow: "#ffff00",
+    orange: "#fe6e00",
+    onyx: "#222222",
   },
   fontSizes: {
     normal: "1rem",
