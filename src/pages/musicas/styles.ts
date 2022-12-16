@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  color: #fff;
+  color: ${(props) => props.theme.colors.primary};
 
   hr {
     margin: 0.5rem 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 1.2rem;
+    }
   }
 `;
 
@@ -26,9 +32,10 @@ export const SongCard = styled.div`
   border: double;
   position: relative;
   transition: 0.2s;
+  overflow: hidden;
 
   &:hover {
-    transform: scale(1.051);
+    transform: scale(1.05);
   }
 
   div {
@@ -40,22 +47,29 @@ export const SongCard = styled.div`
     }
 
     p {
-      line-height: 1.3;
       font-size: 0.8rem;
-      color: cyan;
+      color: orange;
+      margin-top: 0.3rem;
+    }
+
+    span {
+      font-size: 0.8rem;
     }
 
     a {
       display: block;
-      background-color: #bbb;
-      color: #000;
+      background-color: orange;
+      color: ${(props) => props.theme.colors.onyx};
       padding: 0.5rem;
       position: absolute;
-      left: 20px;
+      left: 15px;
+      right: 15px;
       bottom: 15px;
+      text-align: center;
+      transition: 0.2s;
 
       &:hover {
-        background-color: #ffffff;
+        background-color: ${(props) => props.theme.colors.yellow};
       }
     }
   }

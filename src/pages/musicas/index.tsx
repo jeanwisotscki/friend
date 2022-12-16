@@ -23,13 +23,14 @@ export default function Musicas() {
                 height={250}
                 src={item.imageHref}
                 alt=" capa do album"
+                priority
               />
               <div>
                 <h3>{item.song}</h3>
                 <p>{item.album}</p>
-                <p>{item.author}</p>
+                <span>{item.author}</span>
                 <a href={item.songHref} target="_blank" rel="noreferrer">
-                  Compre agora
+                  Comprar
                 </a>
               </div>
             </Atom.SongCard>
