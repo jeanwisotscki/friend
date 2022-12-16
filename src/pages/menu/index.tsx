@@ -12,7 +12,7 @@ export default function Menu() {
   return (
     <Comp.LayoutBase>
       <Atom.Container>
-        <Atom.Title>Main Menu</Atom.Title>
+        <Atom.Title>Main menu</Atom.Title>
 
         <Atom.MainMenuContainer>
           <ul>
@@ -25,7 +25,6 @@ export default function Menu() {
                 </Atom.MenuButton>
               </li>
             </Link>
-
             <Link href={"/musicas"}>
               <li>
                 <Atom.MenuButton
@@ -35,7 +34,6 @@ export default function Menu() {
                 </Atom.MenuButton>
               </li>
             </Link>
-
             <Link href={"/sociais"}>
               <li>
                 <Atom.MenuButton
@@ -45,7 +43,6 @@ export default function Menu() {
                 </Atom.MenuButton>
               </li>
             </Link>
-
             <Link href={"/"}>
               <li>
                 <Atom.ButtonOrangeOnHover

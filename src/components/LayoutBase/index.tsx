@@ -30,20 +30,25 @@ const BackPageWrapper = styled.div`
   margin: 3rem 3rem 1rem;
 
   a {
-    color: #fff;
+    color: ${(props) => props.theme.colors.secondary};
     display: flex;
     align-items: center;
+    transition: 0.2s;
+    padding: 0.5rem;
 
     &::before {
       content: "<";
-      display: block;
-      padding: 0.3rem;
-      background-color: #ccc;
-      color: #000;
+      margin-right: 0.5rem;
+    }
 
-      font-size: 1.1rem;
-      border-radius: 50%;
-      margin-right: 1rem;
+    &:hover {
+      color: ${(props) => props.theme.colors.primary};
+
+      &::before {
+        transition: 0.3s;
+
+        transform: rotate(360deg);
+      }
     }
   }
 

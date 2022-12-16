@@ -12,14 +12,11 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  background: #fe6e00;
+  background: #fff303;
   background-image: linear-gradient(
     to bottom,
-    #fff303,
-    #fff900,
-    #fe6e00,
-    #fe5000,
-    #fd1000
+    ${(props) => props.theme.colors.yellow},
+    ${(props) => props.theme.colors.orange}
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -55,34 +52,22 @@ export const MenuButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    background: #002eff;
-    background-image: linear-gradient(
-      to bottom,
-      #77ccff,
-      #77ccff,
-      #0044ff,
-      #001edd,
-      #0000aa
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: ${(props) => props.theme.colors.yellow};
+
+    &::before {
+      content: ">";
+      margin-right: 0.5rem;
+    }
+
+    &::after {
+      content: "<";
+      margin-left: 0.5rem;
+    }
   }
 `;
 
 export const ButtonOrangeOnHover = styled(MenuButton)`
   &:hover {
-    background: #fe6e00;
-    background-image: linear-gradient(
-      to bottom,
-      #fff303,
-      #fff900,
-      #fe6e00,
-      #fe5000,
-      #fd1000
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: ${(props) => props.theme.colors.orange};
   }
 `;
