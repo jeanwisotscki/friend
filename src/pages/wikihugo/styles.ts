@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  color: #fff;
+export const MainContainer = styled.div`
+  color: ${(props) => props.theme.colors.primary};
   padding: 0 1rem;
-  padding-bottom: 3rem;
 `;
 
 export const Header = styled.header`
@@ -31,8 +30,8 @@ export const AsideContainer = styled.aside`
 
   & > span {
     display: block;
-    color: #020202;
-    background-color: #ccc;
+    color: ${(props) => props.theme.colors.onyx};
+    background-color: ${(props) => props.theme.colors.secondary};
     text-align: center;
     padding: 1rem;
     margin: 0.5rem;
@@ -48,8 +47,8 @@ export const PersonalInfos = styled.section`
   span {
     display: block;
     font-size: 0.6rem;
-    color: #020202;
-    background-color: #ccc;
+    color: ${(props) => props.theme.colors.onyx};
+    background-color: ${(props) => props.theme.colors.secondary};
     margin: 0.5rem;
     padding: 0.5rem;
   }
@@ -64,33 +63,57 @@ export const PersonalInfos = styled.section`
         line-height: 1.4;
 
         &:first-child {
-          color: #020202;
-          background-color: #ccc;
+          color: ${(props) => props.theme.colors.onyx};
+          background-color: ${(props) => props.theme.colors.secondary};
         }
       }
     }
   }
 `;
 
-export const TextContainer = styled.div`
-  width: 100%;
-
-  p {
+const BaseSection = styled.section`
+  p,
+  strong,
+  i,
+  li {
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    margin: 1rem 0;
-    text-align: justify;
-
-    strong,
-    i {
-      font-family: Roboto, Arial, Helvetica, sans-serif;
-    }
   }
 
   h2 {
-    margin-top: 2.5rem;
+    margin-top: 3rem;
   }
 
   hr {
-    margin: 0.5rem 0;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin: 1rem 0;
+    text-align: justify;
+  }
+`;
+
+export const Resume = styled(BaseSection)``;
+
+export const History = styled(BaseSection)``;
+
+export const Discography = styled(BaseSection)`
+  & > div {
+    margin: 2rem 0;
+  }
+
+  div {
+    strong {
+      font-size: 1.5rem;
+    }
+
+    ul {
+      margin-top: 0.5rem;
+      padding: 0 2rem;
+
+      li {
+        list-style: disc;
+      }
+    }
   }
 `;

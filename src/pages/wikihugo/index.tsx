@@ -8,7 +8,7 @@ import * as Comp from "../../components";
 export default function WikiHugo() {
   return (
     <Comp.LayoutBase backPageHref="/menu">
-      <Atom.Container>
+      <Atom.MainContainer>
         <Atom.Header>
           <h2>Hugo Defante</h2>
           <hr />
@@ -52,7 +52,7 @@ export default function WikiHugo() {
             </Atom.PersonalInfos>
           </Atom.AsideContainer>
 
-          <Atom.TextContainer>
+          <Atom.Resume>
             <p>
               <strong>Hugo Defante</strong>, nome artístico de{" "}
               <strong>Hugo Defante Rodrigues</strong>{" "}
@@ -87,11 +87,12 @@ export default function WikiHugo() {
               Guitarrista á mais de 20 anos, Hugo é com toda certeza um dos
               guitarristas do Brasil!
             </p>
+          </Atom.Resume>
 
-            {/**********************************************/}
-
+          <Atom.History>
             <h2>História</h2>
             <hr />
+
             <p>
               <strong>Hugo Defante</strong>, nome artístico de{" "}
               <strong>Hugo Defante Rodrigues</strong>{" "}
@@ -126,46 +127,35 @@ export default function WikiHugo() {
               Guitarrista á mais de 20 anos, Hugo é com toda certeza um dos
               guitarristas do Brasil!
             </p>
+          </Atom.History>
 
-            {/**********************************************/}
-            <section>
-              <h2>Discografia</h2>
-              <hr />
-              <br />
+          <Atom.Discography>
+            <h2>Discografia</h2>
+            <hr />
+
+            <div>
               <div>
                 <strong>Aquilonia </strong>
                 <i>(10 de Dezembro de 2019)</i>
-                <br />
-                <br />
-                <ul>
-                  <li>
-                    <i>* Aquilonia</i>
-                  </li>
-                </ul>
               </div>
-              <br />
-              <br />
+              <ul>
+                <li>Aquilonia</li>
+              </ul>
+            </div>
+            <div>
               <div>
                 <strong>Electron </strong>
                 <i>(10 de Outubro de 2020)</i>
-                <br />
-                <br />
-                <ul>
-                  <li>
-                    <i>* Showtime</i>
-                  </li>
-                  <li>
-                    <i>* Electron</i>
-                  </li>
-                  <li>
-                    <i>* Message From The Past</i>
-                  </li>
-                </ul>
               </div>
-            </section>
-          </Atom.TextContainer>
+              <ul>
+                <li>Showtime</li>
+                <li>Electron</li>
+                <li>Message From The Past</li>
+              </ul>
+            </div>
+          </Atom.Discography>
         </Atom.MainContentWrapper>
-      </Atom.Container>
+      </Atom.MainContainer>
     </Comp.LayoutBase>
   );
 }
