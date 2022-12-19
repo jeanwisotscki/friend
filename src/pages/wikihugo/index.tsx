@@ -94,38 +94,65 @@ export default function WikiHugo() {
             <hr />
 
             <p>
-              <strong>Hugo Defante</strong>, nome artístico de{" "}
-              <strong>Hugo Defante Rodrigues</strong>{" "}
-              <i> (Rio de Janeiro, 26 de maio de 1987)</i> é um virtuoso
-              guitarrista carioca, considerado na sua região, um dos melhores de
-              seu estilo.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+              provident quam quibusdam accusamus voluptatibus. Sapiente,
+              veritatis qui quos eligendi eum est, dicta, placeat ut ipsa eos
+              accusamus commodi. Quibusdam eveniet temporibus reprehenderit
+              provident labore distinctio ipsa fugit eius. Voluptatibus ipsum,
+              laudantium soluta eius amet, facilis ut doloremque harum odio
+              fugiat non ad culpa animi debitis maxime similique perferendis id
+              nobis vero cum, enim ullam? Eveniet, quod! Ullam facere
+              voluptatibus quos animi ipsa recusandae harum iusto at nulla totam
+              esse nostrum iure molestiae accusamus, distinctio temporibus
+              adipisci iste illum dolorum eligendi!
             </p>
 
             <p>
-              Influenciado pelos metais pesados de <strong>Slayer</strong> e os
-              teclados sintetizados de <strong>Iron Maiden</strong>, Hugo é
-              conhecido na sua região por ser um dos precursores do chamado{" "}
-              <strong>Synth metal</strong>, que envolve heavy metal com
-              elementos de música eletrônica. Junto ao seu irmão{" "}
-              <strong>Diogo Defante</strong>, também tornou-se um dos pioneiros
-              do <strong>Robson metal</strong>, com a temática humorística de
-              suas letras e com os sons dúvidosos do seu berrante criando a
-              atmosférica bem-humorada das canções. Seguindo estes estilos, ele
-              ajudou a popularizar o <strong>berrante</strong>{" "}
-              <i>
-                (espécie de buzina usada desde a antiguidade por pastores de
-                ovelhas e gados)
-              </i>{" "}
-              dentro do heavy metal em geral e veio a ser o primeiro guitarrista
-              a tocar esse instrumento em um show para milhares de pessoas. Hugo
-              também já foi considerado o guitarrista mais rápido do Velho
-              Oeste.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consequuntur, iure quos numquam adipisci ipsa minima? Officiis
+              nostrum veniam iste eligendi aliquid esse quae! Laudantium sed
+              quidem laboriosam totam est quae dicta, repellat iusto quas, animi
+              odio corrupti, nulla adipisci fugit reiciendis recusandae
+              exercitationem porro dolorem earum consequatur praesentium
+              pariatur voluptatem?
             </p>
+
             <p>
-              <strong>Hugo Defante</strong> é, além de guitarrista e
-              multi-instrumentista, compositor, streamer e pixel artist.
-              Guitarrista á mais de 20 anos, Hugo é com toda certeza um dos
-              guitarristas do Brasil!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+              provident quam quibusdam accusamus voluptatibus. Sapiente,
+              veritatis qui quos eligendi eum est, dicta, placeat ut ipsa eos
+              accusamus commodi. Quibusdam eveniet temporibus reprehenderit
+              provident labore distinctio ipsa fugit eius. Voluptatibus ipsum,
+              laudantium soluta eius amet, facilis ut doloremque harum odio
+              fugiat non ad culpa animi debitis maxime similique perferendis id
+              nobis vero cum, enim ullam? Eveniet, quod! Ullam facere
+              voluptatibus quos animi ipsa recusandae harum iusto at nulla totam
+              esse nostrum iure molestiae accusamus, distinctio temporibus
+              adipisci iste illum dolorum eligendi!
+            </p>
+
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consequuntur, iure quos numquam adipisci ipsa minima? Officiis
+              nostrum veniam iste eligendi aliquid esse quae! Laudantium sed
+              quidem laboriosam totam est quae dicta, repellat iusto quas, animi
+              odio corrupti, nulla adipisci fugit reiciendis recusandae
+              exercitationem porro dolorem earum consequatur praesentium
+              pariatur voluptatem?
+            </p>
+
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
+              provident quam quibusdam accusamus voluptatibus. Sapiente,
+              veritatis qui quos eligendi eum est, dicta, placeat ut ipsa eos
+              accusamus commodi. Quibusdam eveniet temporibus reprehenderit
+              provident labore distinctio ipsa fugit eius. Voluptatibus ipsum,
+              laudantium soluta eius amet, facilis ut doloremque harum odio
+              fugiat non ad culpa animi debitis maxime similique perferendis id
+              nobis vero cum, enim ullam? Eveniet, quod! Ullam facere
+              voluptatibus quos animi ipsa recusandae harum iusto at nulla totam
+              esse nostrum iure molestiae accusamus, distinctio temporibus
+              adipisci iste illum dolorum eligendi!
             </p>
           </Atom.History>
 
