@@ -44,10 +44,6 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
-  li {
-    list-style: none;
-  }
-  
   button {
     outline: none;
     cursor: pointer;

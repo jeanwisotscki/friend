@@ -11,7 +11,7 @@ export const defaultTheme: DefaultTheme = {
     red: "#f43b3b",
     yellow: "#ffff00",
     orange: "#fe6e00",
-    onyx: "#222222",
+    onyx: "#020202",
   },
   fontSizes: {
     normal: "1rem",
