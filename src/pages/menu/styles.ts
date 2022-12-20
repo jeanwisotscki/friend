@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
 
-  color: #fff;
+  color: ${(props) => props.theme.colors.primary};
 
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  background: #fff303;
+  background: ${(props) => props.theme.colors.yellow};
   background-image: linear-gradient(
     to bottom,
     ${(props) => props.theme.colors.yellow},
@@ -33,14 +33,18 @@ export const MainMenuContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+
+    li {
+      list-style: none;
+    }
   }
 `;
 
 export const MenuButton = styled.button`
   width: 100%;
 
-  color: #fff;
   background: none;
+  color: ${(props) => props.theme.colors.primary};
 
   font-size: 1rem;
   text-align: center;
@@ -52,8 +56,6 @@ export const MenuButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    color: ${(props) => props.theme.colors.yellow};
-
     &::before {
       content: ">";
       margin-right: 0.5rem;
@@ -68,6 +70,22 @@ export const MenuButton = styled.button`
 
 export const ButtonOrangeOnHover = styled(MenuButton)`
   &:hover {
-    color: ${(props) => props.theme.colors.orange};
+    background: ${(props) => props.theme.colors.yellow};
+    background-image: linear-gradient(
+      to bottom,
+      ${(props) => props.theme.colors.yellow},
+      ${(props) => props.theme.colors.orange}
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    &::before {
+      content: "";
+    }
+
+    &::after {
+      content: "";
+    }
   }
 `;

@@ -6,20 +6,20 @@ import * as Atom from "./styles";
 
 import * as Comp from "../../components";
 
-import * as Icon from "../../../public/icons";
+import * as Icons from "../../../public/icons";
 
 export default function Sociais() {
   return (
     <Comp.LayoutBase backPageHref="/menu">
       <Atom.Container>
-        <h2>Me siga nas redes sociais</h2>
+        <h2>Minhas redes sociais</h2>
 
         <ul>
           <Link href={"https://www.twitch.tv/hugodefante"} target="_blank">
             <li>
               <div>
                 <Image
-                  src={Icon.Twitch}
+                  src={Icons.Twitch}
                   width={50}
                   height={50}
                   alt="logo da twitch"
@@ -34,7 +34,7 @@ export default function Sociais() {
             <li>
               <div>
                 <Image
-                  src={Icon.Twitter}
+                  src={Icons.Twitter}
                   width={50}
                   height={50}
                   alt="logo do twitter"
@@ -49,7 +49,7 @@ export default function Sociais() {
             <li>
               <div>
                 <Image
-                  src={Icon.Instagram}
+                  src={Icons.Instagram}
                   width={50}
                   height={50}
                   alt="logo do instagram"

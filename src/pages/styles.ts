@@ -30,12 +30,11 @@ export const MainText = styled.p`
   transform-origin: 50% 0%;
   transform: perspective(300px) rotateX(45deg);
 
-  background: rgb(0, 68, 255);
+  background: ${(props) => props.theme.colors.orange};
   background: linear-gradient(
-    180deg,
-    rgba(103, 34, 200, 1) 11%,
-    rgba(0, 194, 255, 1) 64%,
-    rgba(208, 208, 208, 1) 87%
+    to bottom,
+    ${(props) => props.theme.colors.orange},
+    ${(props) => props.theme.colors.yellow}
   );
   background-clip: text;
   -webkit-background-clip: text;
