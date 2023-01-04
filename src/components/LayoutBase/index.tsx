@@ -10,6 +10,8 @@ const Container = styled.main`
   min-width: 279px;
   min-height: 100vh;
 
+  border: 1px solid red;
+
   display: flex;
   align-items: center;
   justify-content: center;

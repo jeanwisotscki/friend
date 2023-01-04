@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     );
     background-size: 10px 10px;
 
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 
     scrollbar-width: thin; /* "auto" or "thin" */

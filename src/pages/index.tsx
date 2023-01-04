@@ -6,7 +6,7 @@ import * as Comp from "../components";
 
 export default function Home() {
   return (
-    <Comp.LayoutBase>
+    <Atom.MainWrapper>
       <Atom.Container>
         <Atom.PerspectiveTextWrapper>
           <Atom.PerspectiveText data-text="hugo defante">
@@ -22,6 +22,6 @@ export default function Home() {
           <p>&copy; 2022 U.T.I DO ROCK</p>
         </Atom.CopyRightWrapper>
       </Atom.Container>
-    </Comp.LayoutBase>
+    </Atom.MainWrapper>
   );
 }

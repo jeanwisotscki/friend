@@ -14,19 +14,50 @@ const PressStartAnimation = keyframes`
   }
 `;
 
-export const Container = styled.div`
-  width: 100%;
+export const MainWrapper = styled.main`
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
 `;
+
+export const Container = styled.div``;
 
 export const PerspectiveTextWrapper = styled.div`
   text-align: center;
-  border: 2px solid transparent;
+
+  // 599.99px ou menor
+  @media screen and (${breakpoints.xtSmall}) {
+    padding: 1rem 6rem;
+  }
+
+  // 600px ou maior
+  @media screen and (${breakpoints.small}) {
+    padding: 1rem 3rem;
+  }
+
+  // 768px ou maior
+  @media screen and (${breakpoints.medium}) {
+    padding: 1rem 7rem;
+  }
+
+  // 992px ou maior
+  @media screen and (${breakpoints.large}) {
+    padding: 1rem 7.5rem;
+  }
+
+  // 1200px ou maior
+  @media screen and (${breakpoints.xtLarge}) {
+    padding: 1rem 10rem;
+  }
 `;
 
 export const PerspectiveText = styled.span`
   display: block;
 
-  font-size: 6rem;
   text-transform: uppercase;
 
   transform-origin: 50% 0%;
@@ -52,17 +83,26 @@ export const PerspectiveText = styled.span`
     text-shadow: -0.25rem -0.25rem;
   }
 
-  // < 1200
-  @media screen and (${breakpoints.xtLarge}) {
-    font-size: 5rem;
+  // 599.99px ou menor
+  @media screen and (${breakpoints.xtSmall}) {
+    font-size: 2.2rem;
 
     &::before {
-      font-size: 5rem;
+      font-size: 2.2rem;
     }
   }
 
-  // < 900
-  @media screen and (${breakpoints.large}) {
+  // 600px ou maior
+  @media screen and (${breakpoints.small}) {
+    font-size: 3.5rem;
+
+    &::before {
+      font-size: 3.5rem;
+    }
+  }
+
+  // 768px ou maior
+  @media screen and (${breakpoints.medium}) {
     font-size: 4rem;
 
     &::before {
@@ -70,33 +110,21 @@ export const PerspectiveText = styled.span`
     }
   }
 
-  @media screen and (max-width: 665px) {
-    font-size: 3.5rem;
+  // 992px ou maior
+  @media screen and (${breakpoints.large}) {
+    font-size: 5rem;
 
     &::before {
-      font-size: 3.5rem;
-    }
-  }
-  @media screen and (max-width: 560px) {
-    font-size: 3rem;
-
-    &::before {
-      font-size: 3rem;
-    }
-  }
-  @media screen and (max-width: 455px) {
-    font-size: 2.5rem;
-
-    &::before {
-      font-size: 2.5rem;
+      font-size: 5rem;
     }
   }
 
-  @media screen and (${breakpoints.medium}) {
-    font-size: 2rem;
+  // 1200px ou maior
+  @media screen and (${breakpoints.xtLarge}) {
+    font-size: 6rem;
 
     &::before {
-      font-size: 2rem;
+      font-size: 6rem;
     }
   }
 `;
@@ -121,19 +149,19 @@ export const PressStartWrapper = styled.div`
     }
   }
 
-  @media screen and (${breakpoints.xtLarge}) {
+  @media screen and (${breakpoints.xtSmall}) {
     a {
-      font-size: 1rem;
+      font-size: 0.6rem;
     }
   }
-  @media screen and (${breakpoints.large}) {
+  @media screen and (${breakpoints.small}) {
     a {
       font-size: 0.8rem;
     }
   }
   @media screen and (${breakpoints.medium}) {
     a {
-      font-size: 0.6rem;
+      font-size: 1rem;
     }
   }
 `;
@@ -143,19 +171,19 @@ export const CopyRightWrapper = styled.div`
   color: white;
   text-align: center;
 
-  @media screen and (${breakpoints.xtLarge}) {
+  @media screen and (${breakpoints.xtSmall}) {
     p {
-      font-size: 1rem;
+      font-size: 0.5rem;
     }
   }
-  @media screen and (${breakpoints.large}) {
+  @media screen and (${breakpoints.small}) {
     p {
-      font-size: 0.8rem;
+      font-size: 0.6rem;
     }
   }
   @media screen and (${breakpoints.medium}) {
     p {
-      font-size: 0.6rem;
+      font-size: 0.8rem;
     }
   }
 `;
