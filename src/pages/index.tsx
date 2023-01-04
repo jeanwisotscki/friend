@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <Comp.LayoutBase>
       <Atom.Container>
-        <Atom.MainTextWrapper>
-          <Atom.MainText data-text="hugo defante">
-            hugo <br /> defante
-          </Atom.MainText>
-        </Atom.MainTextWrapper>
+        <Atom.PerspectiveTextWrapper>
+          <Atom.PerspectiveText data-text="hugo defante">
+            hugo defante
+          </Atom.PerspectiveText>
+        </Atom.PerspectiveTextWrapper>
 
         <Atom.PressStartWrapper>
           <Link href={"/menu"}>press start button</Link>

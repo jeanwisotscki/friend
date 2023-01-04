@@ -17,7 +17,7 @@ const Container = styled.main`
   margin: 0 auto;
   padding: 0 0 4rem;
 
-  @media screen and (${breakpoints.tablet}) {
+  @media screen and (${breakpoints.large}) {
     & {
       width: 100%;
       padding: 0 1rem 4rem;
@@ -52,7 +52,7 @@ const BackPageWrapper = styled.div`
     }
   }
 
-  @media screen and (${breakpoints.tablet}) {
+  @media screen and (${breakpoints.large}) {
     margin: 3rem 1rem;
   }
 `;

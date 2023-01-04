@@ -18,12 +18,14 @@ export const Container = styled.div`
   width: 100%;
 `;
 
-export const MainTextWrapper = styled.div`
+export const PerspectiveTextWrapper = styled.div`
   text-align: center;
   border: 2px solid transparent;
 `;
 
-export const MainText = styled.p`
+export const PerspectiveText = styled.span`
+  display: block;
+
   font-size: 6rem;
   text-transform: uppercase;
 
@@ -51,7 +53,7 @@ export const MainText = styled.p`
   }
 
   // < 1200
-  @media screen and (${breakpoints.desktop}) {
+  @media screen and (${breakpoints.xtLarge}) {
     font-size: 5rem;
 
     &::before {
@@ -60,7 +62,7 @@ export const MainText = styled.p`
   }
 
   // < 900
-  @media screen and (${breakpoints.tablet}) {
+  @media screen and (${breakpoints.large}) {
     font-size: 4rem;
 
     &::before {
@@ -90,7 +92,7 @@ export const MainText = styled.p`
     }
   }
 
-  @media screen and (${breakpoints.smartphone}) {
+  @media screen and (${breakpoints.medium}) {
     font-size: 2rem;
 
     &::before {
@@ -119,17 +121,17 @@ export const PressStartWrapper = styled.div`
     }
   }
 
-  @media screen and (${breakpoints.desktop}) {
+  @media screen and (${breakpoints.xtLarge}) {
     a {
       font-size: 1rem;
     }
   }
-  @media screen and (${breakpoints.tablet}) {
+  @media screen and (${breakpoints.large}) {
     a {
       font-size: 0.8rem;
     }
   }
-  @media screen and (${breakpoints.smartphone}) {
+  @media screen and (${breakpoints.medium}) {
     a {
       font-size: 0.6rem;
     }
@@ -141,17 +143,17 @@ export const CopyRightWrapper = styled.div`
   color: white;
   text-align: center;
 
-  @media screen and (${breakpoints.desktop}) {
+  @media screen and (${breakpoints.xtLarge}) {
     p {
       font-size: 1rem;
     }
   }
-  @media screen and (${breakpoints.tablet}) {
+  @media screen and (${breakpoints.large}) {
     p {
       font-size: 0.8rem;
     }
   }
-  @media screen and (${breakpoints.smartphone}) {
+  @media screen and (${breakpoints.medium}) {
     p {
       font-size: 0.6rem;
     }
