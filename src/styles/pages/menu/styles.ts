@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import breakpoints from "../../common/breakpoints";
+import breakpoints from "../../../common/breakpoints";
 
 export const Container = styled.div`
   width: 100%;

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import * as Atom from "./styles";
+import * as Atom from "../styles/pages/styles";
 
 export default function Home() {
   return (

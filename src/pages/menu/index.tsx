@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import * as Atom from "./styles";
+import * as Atom from "../../styles/pages/menu/styles";
 
 import * as Comp from "../../components";
 import { useAudioEffects } from "../../hooks/useAudioEffects";

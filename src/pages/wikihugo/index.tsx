@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import * as Atom from "./styles";
+import * as Atom from "../../styles/pages/wikihugo/styles";
 
 import * as Comp from "../../components";
 

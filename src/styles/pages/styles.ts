@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
-import breakpoints from "../common/breakpoints";
+import breakpoints from "../../common/breakpoints";
 
 const PressStartAnimation = keyframes`
   0% {

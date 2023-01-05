@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import * as Atom from "./styles";
+import * as Atom from "../../styles/pages/sociais/styles";
 
 import * as Comp from "../../components";
 
