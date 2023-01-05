@@ -6,8 +6,8 @@ export const defaultTheme: DefaultTheme = {
     secondary: "#bbb",
 
     green: "#26f447",
-    purple: "#b93bf4",
-    blue: "#2647f4",
+    purple: "#6722c8",
+    cyan: "#00c2ff",
     red: "#f43b3b",
     yellow: "#ffff00",
     orange: "#fe6e00",
