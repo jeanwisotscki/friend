@@ -1,12 +1,10 @@
-import React from "react";
+import Image from "next/image";
 
 import * as Atom from "./styles";
 
 import * as Comp from "../../components";
 
 import musicas from "../../data/musicas.json";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Musicas() {
   return (

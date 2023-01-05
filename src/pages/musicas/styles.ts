@@ -1,38 +1,45 @@
 import styled from "styled-components";
+import breakpoints from "../../common/breakpoints";
 
 export const Container = styled.div`
   color: ${(props) => props.theme.colors.primary};
+
+  h2 {
+    font-size: 1.2rem;
+  }
 
   hr {
     margin: 0.5rem 0;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (${breakpoints.medium}) {
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
   }
 `;
 
 export const SongsWrap = styled.div`
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-
+  justify-content: center;
   gap: 2rem;
 
   margin-top: 2rem;
 `;
 
 export const SongCard = styled.div`
-  min-height: 420px;
   max-width: 256px;
+  min-height: 420px;
+
   display: flex;
   flex-direction: column;
-  border: double;
+
   position: relative;
-  transition: 0.2s;
+
+  border: double;
   overflow: hidden;
+  transition: 0.2s;
 
   &:hover {
     transform: scale(1.05);
@@ -47,8 +54,8 @@ export const SongCard = styled.div`
     }
 
     p {
+      color: ${(props) => props.theme.colors.orange};
       font-size: 0.8rem;
-      color: orange;
       margin-top: 0.3rem;
     }
 
@@ -58,14 +65,18 @@ export const SongCard = styled.div`
 
     a {
       display: block;
-      background-color: orange;
+
       color: ${(props) => props.theme.colors.onyx};
-      padding: 0.5rem;
+      background-color: ${(props) => props.theme.colors.orange};
+
       position: absolute;
       left: 15px;
       right: 15px;
       bottom: 15px;
+
       text-align: center;
+
+      padding: 0.5rem;
       transition: 0.2s;
 
       &:hover {

@@ -3,12 +3,13 @@ import breakpoints from "../../common/breakpoints";
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 85vh;
 
   color: ${(props) => props.theme.colors.primary};
 
   display: flex;
   flex-direction: column;
+
   padding: 3rem 0;
 `;
 

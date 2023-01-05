@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../common/breakpoints";
 
 export const MainContainer = styled.div`
   color: ${(props) => props.theme.colors.primary};
@@ -22,33 +23,41 @@ export const MainContentWrapper = styled.main``;
 
 export const AsideContainer = styled.aside`
   width: 300px;
-  float: right;
-  clear: right;
-  margin: 0 0 1rem 1rem;
-  border: double;
+
   text-align: center;
+
+  border: double;
+  margin: 1rem auto;
 
   & > span {
     display: block;
+
     color: ${(props) => props.theme.colors.onyx};
     background-color: ${(props) => props.theme.colors.secondary};
+
     text-align: center;
+
     padding: 1rem;
     margin: 0.5rem;
   }
 
-  @media screen and (max-width: 574px) {
-    float: none;
-    margin: auto;
+  @media screen and (${breakpoints.medium}) {
+    float: right;
+    clear: right;
+
+    margin: 0 0 1rem 1rem;
   }
 `;
 
 export const PersonalInfos = styled.section`
   span {
     display: block;
-    font-size: 0.6rem;
+
     color: ${(props) => props.theme.colors.onyx};
     background-color: ${(props) => props.theme.colors.secondary};
+
+    font-size: 0.6rem;
+
     margin: 0.5rem;
     padding: 0.5rem;
   }
@@ -58,9 +67,9 @@ export const PersonalInfos = styled.section`
 
     tr {
       td {
+        line-height: 1.4;
         font-size: 0.6rem;
         padding: 0.3rem;
-        line-height: 1.4;
 
         &:first-child {
           color: ${(props) => props.theme.colors.onyx};

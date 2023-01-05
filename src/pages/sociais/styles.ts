@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import breakpoints from "../../common/breakpoints";
 
 export const Container = styled.div`
   width: 100%;
@@ -8,6 +9,10 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  h2 {
+    font-size: 1.2rem;
+  }
 
   ul {
     margin: 3rem 0;
@@ -36,9 +41,9 @@ export const Container = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (${breakpoints.medium}) {
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
   }
 `;
