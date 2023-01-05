@@ -2,8 +2,6 @@ import Link from "next/link";
 
 import * as Atom from "./styles";
 
-import * as Comp from "../components";
-
 export default function Home() {
   return (
     <Atom.MainWrapper>

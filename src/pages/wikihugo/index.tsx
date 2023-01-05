@@ -66,13 +66,17 @@ export default function WikiHugo() {
               Influenciado pelos metais pesados de <strong>Slayer</strong> e os
               teclados sintetizados de <strong>Iron Maiden</strong>, Hugo é
               conhecido por ser um dos precursores do chamado{" "}
-              <strong>Synth metal</strong> no Rio de Janeiro, gênero que envolve
-              heavy metal com elementos de música eletrônica. Junto ao seu irmão{" "}
-              <strong>Diogo Defante</strong>, também tornou-se um dos pioneiros
-              do <strong>Robson metal</strong>, com a temática humorística de
-              suas letras e com os sons dúvidosos do seu berrante criando a
-              atmosférica bem-humorada das canções. Seguindo estes estilos, ele
-              ajudou a popularizar o <strong>berrante</strong>{" "}
+              <strong>Synth Metal</strong> no Rio de Janeiro, gênero que envolve
+              heavy metal com elementos de música eletrônica.
+            </p>
+
+            <p>
+              Junto ao seu irmão <strong>Diogo Defante</strong>, também
+              tornou-se um dos pioneiros do <strong>Robson Metal</strong>, com a
+              temática humorística de suas letras e com os sons dúvidosos do seu
+              berrante criando a atmosférica bem-humorada das canções. Seguindo
+              estes estilos, ele ajudou a popularizar o{" "}
+              <strong>berrante</strong>{" "}
               <i>
                 (espécie de buzina usada desde a antiguidade por pastores de
                 ovelhas e gados)

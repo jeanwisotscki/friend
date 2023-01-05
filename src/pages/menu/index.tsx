@@ -45,11 +45,11 @@ export default function Menu() {
             </Link>
             <Link href={"/"}>
               <li>
-                <Atom.ButtonOrangeOnHover
+                <Atom.ButtonYellowOnHover
                   onMouseEnter={() => menuHoverAudio.current?.play()}
                 >
                   Voltar
-                </Atom.ButtonOrangeOnHover>
+                </Atom.ButtonYellowOnHover>
               </li>
             </Link>
           </ul>

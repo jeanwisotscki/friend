@@ -1,5 +1,5 @@
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
 import styled from "styled-components";
 
 import breakpoints from "../../common/breakpoints";
@@ -9,8 +9,6 @@ const Container = styled.main`
   max-width: 50rem;
   min-width: 279px;
   min-height: 100vh;
-
-  border: 1px solid red;
 
   display: flex;
   align-items: center;
@@ -29,7 +27,7 @@ const Container = styled.main`
 
 const BackPageWrapper = styled.div`
   display: inline-block;
-  margin: 3rem 3rem 1rem;
+  margin: 2rem 0.5rem;
 
   a {
     color: ${(props) => props.theme.colors.secondary};

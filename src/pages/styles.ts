@@ -24,7 +24,9 @@ export const MainWrapper = styled.main`
   overflow: hidden;
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  max-width: 50rem;
+`;
 
 export const PerspectiveTextWrapper = styled.div`
   text-align: center;
@@ -48,11 +50,6 @@ export const PerspectiveTextWrapper = styled.div`
   @media screen and (${breakpoints.large}) {
     padding: 1rem 7.5rem;
   }
-
-  // 1200px ou maior
-  @media screen and (${breakpoints.xtLarge}) {
-    padding: 1rem 10rem;
-  }
 `;
 
 export const PerspectiveText = styled.span`
@@ -65,9 +62,10 @@ export const PerspectiveText = styled.span`
 
   background: ${(props) => props.theme.colors.orange};
   background: linear-gradient(
-    to bottom,
-    ${(props) => props.theme.colors.orange},
-    ${(props) => props.theme.colors.yellow}
+    180deg,
+    ${(props) => props.theme.colors.purple} 11%,
+    ${(props) => props.theme.colors.cyan} 54%,
+    ${(props) => props.theme.colors.secondary} 87%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -116,15 +114,6 @@ export const PerspectiveText = styled.span`
 
     &::before {
       font-size: 5rem;
-    }
-  }
-
-  // 1200px ou maior
-  @media screen and (${breakpoints.xtLarge}) {
-    font-size: 6rem;
-
-    &::before {
-      font-size: 6rem;
     }
   }
 `;
