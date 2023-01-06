@@ -54,19 +54,37 @@ export const PerspectiveTextWrapper = styled.div`
 
 export const PerspectiveText = styled.span`
   display: block;
-
   text-transform: uppercase;
 
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
+
+  -webkit-transform: perspective(300px) rotateX(45deg);
   transform: perspective(300px) rotateX(45deg);
 
   background: ${(props) => props.theme.colors.orange};
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(11%, ${(props) => props.theme.colors.purple}),
+    color-stop(54%, ${(props) => props.theme.colors.cyan}),
+    color-stop(87%, ${(props) => props.theme.colors.secondary})
+  );
+  background: -o-linear-gradient(
+    top,
+    ${(props) => props.theme.colors.purple} 11%,
+    ${(props) => props.theme.colors.cyan} 54%,
+    ${(props) => props.theme.colors.secondary} 87%
+  );
   background: linear-gradient(
     180deg,
     ${(props) => props.theme.colors.purple} 11%,
     ${(props) => props.theme.colors.cyan} 54%,
     ${(props) => props.theme.colors.secondary} 87%
   );
+
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -129,11 +147,22 @@ export const PressStartWrapper = styled.div`
 
     padding: 1rem;
 
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    -moz-transition: 0.2s;
     transition: 0.2s;
+
+    -webkit-animation: ${PressStartAnimation} 2s forwards infinite;
+    -moz-animation: ${PressStartAnimation} 2s forwards infinite;
+    -o-animation: ${PressStartAnimation} 2s forwards infinite;
     animation: ${PressStartAnimation} 2s forwards infinite;
 
     &:hover {
       color: ${(props) => props.theme.colors.yellow};
+
+      -webkit-animation: none;
+      -moz-animation: none;
+      -o-animation: none;
       animation: none;
     }
   }
