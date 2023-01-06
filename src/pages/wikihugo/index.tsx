@@ -63,8 +63,8 @@ export default function WikiHugo() {
                 <strong>Hugo Defante Rodrigues</strong>{" "}
                 <i> (Rio de Janeiro, 26 de maio de 1987)</i> é um virtuoso
                 guitarrista carioca, considerado na sua região, um dos melhores
-                de seu estilo. Guitarrista á mais de 20 anos, Hugo é com toda
-                certeza um dos guitarristas do Brasil!
+                de seu estilo. Com mais de 20 anos de experiência, Hugo é com
+                toda certeza um dos guitarristas do Brasil!
               </p>
 
               <p>
