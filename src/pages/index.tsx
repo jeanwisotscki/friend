@@ -1,25 +1,32 @@
+import Head from "next/head";
 import Link from "next/link";
 
 import * as Atom from "../styles/pages/styles";
 
 export default function Home() {
   return (
-    <Atom.MainWrapper>
-      <Atom.Container>
-        <Atom.PerspectiveTextWrapper>
-          <Atom.PerspectiveText data-text="hugo defante">
-            hugo defante
-          </Atom.PerspectiveText>
-        </Atom.PerspectiveTextWrapper>
+    <>
+      <Head>
+        <title>Hugo Defante | Início</title>
+      </Head>
 
-        <Atom.PressStartWrapper>
-          <Link href={"/menu"}>press start button</Link>
-        </Atom.PressStartWrapper>
+      <Atom.MainWrapper>
+        <Atom.Container>
+          <Atom.PerspectiveTextWrapper>
+            <Atom.PerspectiveText data-text="hugo defante">
+              hugo defante
+            </Atom.PerspectiveText>
+          </Atom.PerspectiveTextWrapper>
 
-        <Atom.CopyRightWrapper>
-          <p>&copy; 2022 U.T.I DO ROCK</p>
-        </Atom.CopyRightWrapper>
-      </Atom.Container>
-    </Atom.MainWrapper>
+          <Atom.PressStartWrapper>
+            <Link href={"/menu"}>press start button</Link>
+          </Atom.PressStartWrapper>
+
+          <Atom.CopyRightWrapper>
+            <p>&copy; 2022 U.T.I DO ROCK</p>
+          </Atom.CopyRightWrapper>
+        </Atom.Container>
+      </Atom.MainWrapper>
+    </>
   );
 }
