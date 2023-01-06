@@ -93,6 +93,7 @@ const BaseSection = styled.section`
   }
 
   hr {
+    margin-top: 0.5rem;
     margin-bottom: 1.5rem;
   }
 
