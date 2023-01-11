@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
 import * as Atom from "../styles/pages/styles";
@@ -12,11 +13,14 @@ export default function Home() {
 
       <Atom.MainWrapper>
         <Atom.Container>
-          <Atom.PerspectiveTextWrapper>
-            <Atom.PerspectiveText data-text="hugo defante">
-              hugo defante
-            </Atom.PerspectiveText>
-          </Atom.PerspectiveTextWrapper>
+          <Atom.LogoWrapper>
+            <Image
+              src={"/hugo-white.svg"}
+              width={800}
+              height={300}
+              alt="logomarca"
+            />
+          </Atom.LogoWrapper>
 
           <Atom.PressStartWrapper>
             <Link href={"/menu"}>press start button</Link>

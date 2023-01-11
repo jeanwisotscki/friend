@@ -28,111 +28,13 @@ export const Container = styled.div`
   max-width: 50rem;
 `;
 
-export const PerspectiveTextWrapper = styled.div`
-  text-align: center;
+export const LogoWrapper = styled.div`
+  padding: 1rem;
 
-  // 599.99px ou menor
-  @media screen and (${breakpoints.xtSmall}) {
-    padding: 1rem 6rem;
-  }
-
-  // 600px ou maior
-  @media screen and (${breakpoints.small}) {
-    padding: 1rem 3rem;
-  }
-
-  // 768px ou maior
-  @media screen and (${breakpoints.medium}) {
-    padding: 1rem 7rem;
-  }
-
-  // 992px ou maior
-  @media screen and (${breakpoints.large}) {
-    padding: 1rem 7.5rem;
-  }
-`;
-
-export const PerspectiveText = styled.span`
-  display: block;
-  text-transform: uppercase;
-
-  -webkit-transform-origin: 50% 0%;
-  -ms-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-
-  -webkit-transform: perspective(300px) rotateX(45deg);
-  transform: perspective(300px) rotateX(45deg);
-
-  background: ${(props) => props.theme.colors.orange};
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(11%, ${(props) => props.theme.colors.purple}),
-    color-stop(54%, ${(props) => props.theme.colors.cyan}),
-    color-stop(87%, ${(props) => props.theme.colors.secondary})
-  );
-  background: -o-linear-gradient(
-    top,
-    ${(props) => props.theme.colors.purple} 11%,
-    ${(props) => props.theme.colors.cyan} 54%,
-    ${(props) => props.theme.colors.secondary} 87%
-  );
-  background: linear-gradient(
-    180deg,
-    ${(props) => props.theme.colors.purple} 11%,
-    ${(props) => props.theme.colors.cyan} 54%,
-    ${(props) => props.theme.colors.secondary} 87%
-  );
-
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  &::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: ${(props) => props.theme.colors.primary};
-    font-size: 6rem;
-    text-shadow: -0.25rem -0.25rem;
-  }
-
-  // 599.99px ou menor
-  @media screen and (${breakpoints.xtSmall}) {
-    font-size: 2.2rem;
-
-    &::before {
-      font-size: 2.2rem;
-    }
-  }
-
-  // 600px ou maior
-  @media screen and (${breakpoints.small}) {
-    font-size: 3.5rem;
-
-    &::before {
-      font-size: 3.5rem;
-    }
-  }
-
-  // 768px ou maior
-  @media screen and (${breakpoints.medium}) {
-    font-size: 4rem;
-
-    &::before {
-      font-size: 4rem;
-    }
-  }
-
-  // 992px ou maior
-  @media screen and (${breakpoints.large}) {
-    font-size: 5rem;
-
-    &::before {
-      font-size: 5rem;
-    }
+  img {
+    width: 100%;
+    max-height: 300px;
+    height: auto;
   }
 `;
 
